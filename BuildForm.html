@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Survey Form</title>
+    <!-- styling of the form -->
+    <style>
+        
+        #sbutton {
+            background-color: rgba(255, 127, 80, 0.637);
+            margin-left: 170px;
+            width: 250px;
+            height: 35px;
+        }
+        form{
+           position: absolute;
+           left: 250px;
+           right: 250px;
+           border-style: ridge;
+        }
+        .pad{
+            margin-left: 47px;
+        }
+
+    </style>
+</head>
+<!-- body of the html document -->
+<body>
+    <!-- form begins here -->
+    <form>
+        <!-- heading of the form -->
+
+        <h2 style="text-align: center;">Employee Satisfaction Survey</h2><br>
+        <hr><br>
+
+        <!-- name content of the form using text input-->
+
+        <div class="pad">
+            <label>Name</label><br>
+            <input type="text" placeholder="first name" style="width: 300px; height: 30px;">
+            <input type="text" placeholder="last name" style="width: 300px; height: 30px;"><br><br>
+            <label>Other Name</label>
+            <label style="margin-left: 230px;">Date</label><br>
+            <input type="text" placeholder="other name" style="width: 300px; height: 30px;">
+            <input type="date" style="width: 300px; height: 30px;">
+        </div>
+
+        <!-- yes or no question using radio input -->
+
+        <div class="pad">
+            <p>How do you feel working here ? </p>
+            <input type="radio" id="Neutral" name="work" value="Neutral">
+            <label for="Neutral">Neutral</label><br>
+            <input type="radio" id="Somewhat dissatisfed" name="work" value="Somewhat dissatisfed">
+            <label for="Somewhat dissatisfed">Somewhat dissatisfed</label><br>
+           <input type="radio" id="Very dissatisfed" name="work" value="Very dissatisfed">
+           <label for="Very dissatisfed">Very dissatisfed</label>
+        </div>
+
+        <!-- yes or no question using radio input -->
+
+        <div class="pad">
+            <p>Do you feel valued at work ? </p>
+            <input type="radio" name="valued" value="Yes">
+            <label>Yes</label><br>
+            <input type="radio" name="valued" value="No">
+            <label>No</label>
+        </div>
+
+        <!-- using textarea tag to create a text field -->
+
+        <div class="pad">
+            <p>
+                <strong>If No, Please Explain</strong>
+            </p>
+            <textarea name="message" placeholder="Type here" cols="82" rows="10"></textarea>
+        </div><br>
+
+         <!-- yes or no question using radio input -->
+
+        <div class="pad">
+            <p>Do you have the resources you need to perform your job well ? </p>
+            <input type="radio" name="perform" value="Yes">
+            <label>Yes</label><br>
+            <input type="radio" name="perform" value="No">
+            <label>No</label>
+        </div>
+
+        <!-- using textarea tag to create a text field -->
+
+        <div class="pad">
+            <p>
+                <strong>If No, Please Explain</strong>
+            </p>
+            <textarea name="message" placeholder="Type here" cols="82" rows="10"></textarea>
+        </div><br>
+
+         <!-- yes or no question using radio input -->
+
+        <div class="pad">
+            <p>Do your job cause you stress or anxiety ? </p>
+            <input type="radio" name="job" value="Yes">
+            <label>Yes</label><br>
+            <input type="radio" name="job" value="No">
+            <label>No</label>
+        </div>
+
+        <!-- using textarea tag to create a text field -->
+
+        <div class="pad">
+            <p>
+                <strong>If No, Please Explain</strong>
+            </p>
+            <textarea name="message" placeholder="Type here" cols="82" rows="10"></textarea>
+        </div><br>
+
+         <!-- yes or no question using radio input -->
+
+        <div class="pad">
+            <p>Are sufficient efforts being made to solicit colleague opinions and feedback ? </p>
+            <input type="radio" name="made" value="Yes">
+            <label>Yes</label><br>
+            <input type="radio" name="made" value="No">
+            <label>No</label>
+        </div>
+
+        <!-- using textarea tag to create a text field -->
+
+        <div class="pad">
+            <p>
+                <strong>If No, Please Explain</strong>
+            </p>
+            <textarea name="message" placeholder="Type here" cols="82" rows="10"></textarea>
+        </div><br>
+
+        <!-- using textarea tag to create a text field -->
+
+        <div class="pad">
+            <p>
+                <strong>Please, Provide Any Additional Feedback</strong>
+            </p>
+            <textarea name="message" placeholder="Type here" cols="82" rows="10"></textarea>
+        </div><br>
+
+        <!-- submit button -->
+
+        <div class="pad">
+            <input type="submit" id="sbutton" value="submit">
+        </div>
+
+    </form>
+</body>
+</html>
